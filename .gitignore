@@ -1,0 +1,8 @@
+.php-version
+.idea/
+.vsconfig/
+.phpunit.result.cache
+.phpunit.cache/
+/vendor/
+/build/
+/coverage/

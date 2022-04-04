@@ -4,7 +4,9 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Vartroth\\CecaTpvPhp\\": "src/"
+            "CecaTpvPhp\\": "src/",
+            "CecaTpvPhp\\ValueObject\\": "src/ValueObject",
+            "CecaTpvPhp\\Share\\": "src/Share"
         }
     },
     "authors": [
@@ -14,5 +16,24 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "vartroth/functions-utils": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9",
+        "php-parallel-lint/php-parallel-lint": "^1.2",
+        "php-parallel-lint/php-console-highlighter": "~0.5",
+        "php-parallel-lint/php-var-dump-check": "~0.4"
+    },
+    "scripts": {
+        "phpunit": [
+            "XDEBUG_MODE=coverage ./vendor/bin/phpunit --coverage-html coverage"
+        ],
+        "test": [
+            "./vendor/bin/phpunit --coverage-text",
+            "./vendor/bin/parallel-lint --exclude vendor --exclude index.php .",
+            "./vendor/bin/var-dump-check --exclude vendor --exclude index.php ."
+        ]
+    }
 }
