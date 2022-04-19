@@ -25,7 +25,7 @@ class CecaPayment
 
     const URL_DEVELOP = "https://pgw.ceca.es/tpvweb/tpv/compra.action";
     const URL_PRODUCTION = "https://tpv.ceca.es/tpvweb/tpv/compra.action";
-    const SUPORTED_PAYMENT = "SSL";
+    const SUPPORTED_PAYMENT = "SSL";
 
     private $_merchantId;
     private $_acquirerBin;
