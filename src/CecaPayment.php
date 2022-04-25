@@ -23,8 +23,8 @@ class CecaPayment
     const ENCRYPTION = 'SHA2';
     const DEFAULT_CURRENCY_TYPE = "978";
 
-    const URL_DEVELOP = "https://pgw.ceca.es/tpvweb/tpv/compra.action";
-    const URL_PRODUCTION = "https://tpv.ceca.es/tpvweb/tpv/compra.action";
+    const URL_DEVELOP = "https://tpv.ceca.es/tpvweb/tpv/compra.action";
+    const URL_PRODUCTION = "https://pgw.ceca.es/tpvweb/tpv/compra.action";
     const SUPPORTED_PAYMENT = "SSL";
     const DEFAULT_LANGUAGE = 1;
 
